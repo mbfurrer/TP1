@@ -5,8 +5,13 @@
 
 :root{
     --color-primario-100: #ffffff;
+    --color-primario-200: #fbfaff;
+    --color-primario-300:#f1ebfc;
     --color-primario-400: #e4d6ff;
+    --color-primario-500:#6b6b6b;
+    --color-primario-600:#632ade;
     --color-primario-700:#652bdf;
+    --color-primario-900-box:#370d73;
     --color-primario-800:#360c72;
     --color-primario-900: #2b2b2b;
     --color-divider:#bfbfbf;
@@ -20,7 +25,7 @@
 }
 
 body{
-    background-color: var(--color-primario-100);
+    background-color: var(--color-primario-200);
 }
 
 ul, ol{
@@ -48,6 +53,7 @@ a:active, a:visited{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: #ffffff;
 }
 
 .header-container{
@@ -150,6 +156,50 @@ a:active, a:visited{
     background-color: var(--color-primario-400);
     color: var(--color-primario-800);
 }
+
+
+
+.section-vuelo-container{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    max-width: 1022px;
+    margin-top: 64px;
+    gap: 32px;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: 700;
+    color:var(--color-primario-900);
+}
+
+.section-vuelo-beneficios{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center; 
+    gap: 16px;
+}
+
+.section-vuelo-cajas{
+    background-color: white;
+}
+
+h2{
+    font-size: 24px;
+    color: var(--color-primario-900);
+}
+
+p{
+    font-size: 18px;
+    color: var(--color-primario-500);
+}
+
+
+
+
 
 @media screen and (max-width: 984px){
     
