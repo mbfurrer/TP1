@@ -28,7 +28,11 @@ body{
     background-color: var(--color-primario-200);
     font-size: 100%;
     font-family: "Inter", sans-serif;
+    overflow-x: visible;
+    height: 100%;
+    padding-top: 76px;
 }
+
 
 ul, ol{
     list-style: none;
@@ -44,19 +48,35 @@ a{
     text-decoration: none; 
 }
 
+.banner-inicio{
+    display: flex; 
+    justify-content: center;
+}
+
+.banner-inicio img{
+    border-radius: 32px;
+    height: 400px;
+    max-width: 1100px;
+    width: 100%;
+}
+
 .header{
     border-bottom: 1px solid #e7eaed;
-    width: 100%;
-    height: 76px;
+    min-height: 76px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: var(--color-primario-100);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
 }
 
 .header-container{
-    padding: 16px;
+    max-width: 1022px;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
@@ -64,7 +84,7 @@ a{
 }
 
 .header-container img{
-    height: 37px;
+    height: 40px;
 }
 
 .btn-menu{
@@ -238,7 +258,7 @@ background-color: var(--color-primario-300);
     flex-wrap: wrap;
 }
 
-h2{
+h2.cards-beneficio{
     font-size: 24px;
     color: var(--color-primario-900);
     font-weight: 600;
@@ -273,7 +293,7 @@ p{
     width: 100%;
 }
 
-.section-vuelo-historias h2{
+.section-vuelo-historias-text h2{
     font-size: 30px;
     color: var(--color-primario-100);
     font-weight: 600;
@@ -333,16 +353,27 @@ p{
     background-color: var(--color-primario-100);
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
     border-radius: 32px;
-    padding: 32px 24px 0px 24px;
-    width: auto;
-    min-width: 50%;
 }
 
 .sectionB__container-text-img img{
     width: 487px;
+}
+
+.sectionB__container-text-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    padding: 32px 24px;
+}
+
+.sectionB__container-text-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    padding: 32px 24px;
 }
 
 .sectionB__container-text{
@@ -350,15 +381,16 @@ p{
     flex-direction: column;
     justify-content: center;
     text-align: start;
-    gap: 32px;
+    margin-top: 54px;
 }
 
 h2.title{
-    font-size: 30px;
     line-height: 34px;
-    font-weight: 600;
     letter-spacing: -.045em;
     color: var(--color-primario-900);
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 24px
 }
 
 p.desc{
@@ -369,16 +401,24 @@ a.btn-setionB{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 41px;
     width: 160px;
     padding: 6px 24px;
     border-radius: 50px;
-    padding: 6px 24px;
+    border: 1px solid transparent;
+    padding: 10px 32px;
     font-size: 14px;
     font-weight: 700;
+    line-height: 1.5rem;
+    letter-spacing: .02857em;
     text-align: center;
     background-color: var(--color-primario-700);
     color: var(--color-primario-100);
+    cursor: pointer;
+    white-space: nowrap
+}
+
+a.btn-setionB:hover{
+    background-color: var(--color-primario-900-box);
 }
 
 .order-change1{
@@ -392,7 +432,7 @@ a.btn-setionB{
 }
 
 
-@media screen and (max-width: 989px) {
+@media screen and (max-width: 991px) {
 /* Estilos Header */
 
     .header-container{
@@ -485,5 +525,15 @@ a.btn-setionB{
 
 .section-vuelo-historias-btn a{
     width: 100%;
+}
+.sectionB__container-text-img{
+    background-color: var(--color-primario-100);
+    display: flex;
+    flex-direction: column;
+    border-radius: 32px;
+
+
+
+
 }
 }
