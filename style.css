@@ -356,8 +356,20 @@ p{
     border-radius: 32px;
 }
 
+.sectionB__container-text-img-rev{
+    background-color: var(--color-primario-100);
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 32px;
+}
+
+.sectionB__container-text-img-rev img{
+    width: 100%;
+    flex: 1
+}
 .sectionB__container-text-img img{
-    width: 487px;
+    width: 100%;
+    flex: 1
 }
 
 .sectionB__container-text-btn{
@@ -433,6 +445,7 @@ a.btn-setionB:hover{
 
 
 @media screen and (max-width: 991px) {
+
 /* Estilos Header */
 
     .header-container{
@@ -472,9 +485,26 @@ a.btn-setionB:hover{
     .header__actions{
         display: none;
     }
-}
 
 @media screen and (max-width: 767px){
+
+     /* Estilo inicio */
+
+    .banner-inicio img{
+    height: auto;
+    width: 100%;
+    position: absolute;
+    order: 0;
+    border-radius: 0;
+    }
+
+    .module-banner{
+    display: grid;
+    gap: 26px;
+    padding: 24px;
+    }
+    
+
     /* Estilos Section Vuelo */
 
     .section-vuelo-beneficios{
