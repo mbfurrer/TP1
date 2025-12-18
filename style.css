@@ -51,7 +51,7 @@ a{
 .banner-inicio{
     display: flex; 
     justify-content: center;
-    width: 1920px;
+    width: 100%;
 }
 
 .banner-inicio img{
@@ -439,6 +439,29 @@ a.btn-setionB:hover{
     background-color: var(--color-primario-900-box);
 }
 
+/* Footer */
+
+.footer__sectiona{
+    background-color: var(--color-primario-100);
+    width: 100%;
+    position: sticky;
+    bottom: 1;
+    margin: 0 auto;
+    max-width: 1022px;
+}
+
+.footer_links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 
 @media screen and (max-width: 991px) {
@@ -450,7 +473,7 @@ a.btn-setionB:hover{
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        }
+    }
 
     .header-container img{
         display: none;
@@ -517,65 +540,67 @@ a.btn-setionB:hover{
         margin: 0;
         font-size: 30px;
         line-height: 2.25rem;
-}
+    }
 
     .section-vuelo-cajas{
         width: 100%;
         
-}
+    }
 
     .section-vuelo-cajas h2{
         font-size: 20px;
-}
+    }   
 
     .section-vuelo-cajas p{
         font-size: 16px;
-}
+    }
 
     .section-vuelo-historias{
         display: flex;
         flex-direction: column;
         padding: 32px 70px;
         gap: 32px;
-}
+    }
 
     .section-vuelo-historias-text h2{
         font-size: 24px;
-}
+    }
 
     .section-vuelo-historias-btn{
         justify-content: center;
         width: 100%;
-}
+    }
 
     .section-vuelo-historias-btn a{
         width: 100%;
-}
+    }
 
 /* Sección B */
     .sectionB__container-text-img{
         display: flex;
         flex-direction: column-reverse;
         
-}
+    }
 
-    .sectionB__container-text-img-rev{
+    .sectionB__container-text-img-rev{  
         display: flex;
         flex-direction: column-reverse;
-}
+    }   
 
     .sectionB__container-text-img-rev img{
         width: 100%;
         height: 100%;
-}
+    }
+
     .sectionB__container-text-img img{
         width: 100%;
         height: 100%;
-}
+    }
+
     .sectionB__container-text-btn{
         display:flex;
         align-items: center;
-    }    
+    }
 
     a.btn-setionB{
         width: 100%;
