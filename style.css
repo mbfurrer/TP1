@@ -25,16 +25,18 @@
 }
 
 body{
-    background-color: var(--color-primario-200);
     font-size: 100%;
     font-family: "Inter", sans-serif;
     overflow-x: visible;
     height: 100%;
     padding-top: 76px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-primario-100);
 }
 
 
-ul, ol{
+ul, ol, li{
     list-style: none;
 }
 
@@ -45,7 +47,8 @@ button {
 }
 
 a{
-    text-decoration: none; 
+    text-decoration: none;
+    color: inherit; 
 }
 
 .banner-inicio{
@@ -176,12 +179,15 @@ a{
 
 /* FIN Estilos Header - INICIO Estilos Main*/
 
+main{
+    background-color: var(--color-primario-200)
+}
+
 .main__body{
     max-width: 1022px;
     width: calc(100% - 48px);
     margin: 0 auto;
-    padding: 30px 0 0;
-    height: 100vh;
+    flex:1;
 }
 
 .main__section-container{
@@ -355,6 +361,8 @@ p{
     display: flex;
     flex-direction: row;
     border-radius: 32px;
+    overflow: hidden;
+
 }
 
 .sectionB__container-text-img-rev{
@@ -362,15 +370,16 @@ p{
     display: flex;
     flex-direction: row-reverse;
     border-radius: 32px;
+    overflow: hidden;
 }
 
 .sectionB__container-text-img-rev img{
-    width: 511px;
+    max-width: 511px;
     height: 100%;
     flex: 1
 }
 .sectionB__container-text-img img{
-    width: 511px;
+    max-width: 511px;
     height: 100%;
     flex: 1
 }
@@ -441,20 +450,24 @@ a.btn-setionB:hover{
 
 /* Footer */
 
-.footer__sectiona{
+footer{
     background-color: var(--color-primario-100);
-    width: 100%;
-    position: sticky;
-    bottom: 1;
-    margin: 0 auto;
+    padding: 24px;
+    align-items: center;
+}
+
+.footer__sectiona{
     max-width: 1022px;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--color-divider);
+    padding: 32px 0;
 }
 
 .footer_links{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
 }
 
 .footer-links-cards{
@@ -462,6 +475,23 @@ a.btn-setionB:hover{
     flex-direction: column;
     justify-content: center;
 }
+
+.footer-links-cards li{
+    margin: 8px 0px;
+    font-size: 14px;
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: var(--color-primario-900);
+}
+
+.footer__links-title{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+
+
 
 
 @media screen and (max-width: 991px) {
