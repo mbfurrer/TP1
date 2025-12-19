@@ -102,6 +102,7 @@ header{
 .header__nav-list button:hover{
     background-color: var(--color-primario-400);
     color: var(--color-primario-800);
+    
 }
 
 .header__nav-list::after {
@@ -150,6 +151,7 @@ header{
 .header__actions-espacio:hover{
     background-color: var(--color-primario-400);
     color: var(--color-primario-800);
+    transition: all .4s ease-in-out 0s;
 }
 
 .header__actions-nave{
@@ -160,9 +162,10 @@ header{
 .header__actions-nave:hover{
     background-color: var(--color-primario-400);
     color: var(--color-primario-800);
+    transition: all .4s ease-in-out 0s;
 }
 
-/* FIN Estilos Header - INICIO Estilos Main*/
+/* MAIN */
 
 main{
     background-color: var(--color-primario-200)
@@ -232,7 +235,7 @@ h1.main-title{
     align-items:center stretch; 
     width: 100%;   
     gap: 24px;
-    }
+}
 
 .section-vuelo-cajas{
     display: flex;
@@ -245,15 +248,14 @@ h1.main-title{
     padding: 24px;
     margin-top: 12px;
     flex: 1
-    }
+}
 
 .section-vuelo-icon{
-font-size: 24;
-color: var(--color-primario-600);
-/* font-weight: 400; no funciona porque no es SVG, los iconos de bootstrap no aceptan cambios en su weight */
-padding: 16px;
-border-radius: 8px;
-background-color: var(--color-primario-300);
+    font-size: 24;
+    color: var(--color-primario-600);
+    padding: 16px;
+    border-radius: 8px;
+    background-color: var(--color-primario-300);
 }
 
 .section-vuelo-text{
@@ -344,7 +346,7 @@ p{
     color: var(--color-primario-400);
 }
 
-/* SECCION 2 */
+/* SECCION B */
 
 .sectionB__cajas{
     display: flex;
@@ -353,7 +355,7 @@ p{
     align-items: stretch; 
     width: 100%;   
     gap: 48px;
-    }
+}
 
 .sectionB__container-text-img{
     background-color: var(--color-primario-100);
@@ -377,10 +379,23 @@ p{
     height: 100%;
     flex: 1
 }
+
+.sectionB__container-text-img-rev img:hover{
+    transform: scale(1.05);
+    transition: transform .4s ease;
+    transform-origin: 50% 50%;
+}
+
 .sectionB__container-text-img img{
     max-width: 511px;
     height: 100%;
     flex: 1
+}
+
+.sectionB__container-text-img img:hover{
+    transform: scale(1.05);
+    transition: transform .4s ease;
+    transform-origin: 50% 50%;
 }
 
 .sectionB__container-text-btn{
@@ -531,23 +546,23 @@ footer{
     }
 
     h1.main-title{
-    font-size: 30px;
-}
+        font-size: 30px;
+    }
 
 @media screen and (max-width: 767px){
 
      /* Inicio */
 
     .banner-inicio img{
-    height: auto;
-    width: 100%;
-    border-radius: 0;
+        height: auto;
+        width: 100%;
+        border-radius: 0;
     }
 
     .module-banner{
-    display: grid;
-    gap: 26px;
-    padding: 24px;
+        display: grid;
+        gap: 26px;
+        padding: 24px;
     }
     
 
@@ -606,8 +621,7 @@ footer{
     /* Sección B */
     .sectionB__container-text-img{
         display: flex;
-        flex-direction: column-reverse;
-        
+        flex-direction: column-reverse;    
     }
 
     .sectionB__container-text-img-rev{  
@@ -632,7 +646,6 @@ footer{
 
     a.btn-setionB{
         width: 100%;
-
     }
 
     .sectionB__container-text{
@@ -652,6 +665,7 @@ footer{
         grid-column-gap: 24px;
         grid-row-gap: 8px;
     }
+
     .footer-img{
         display: flex;
         justify-content: center;
