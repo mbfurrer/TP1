@@ -460,6 +460,7 @@ a.btn-setionB{
 
 a.btn-setionB:hover{
     background-color: var(--color-primario-900-box);
+    transition: all .4s ease-in-out 0s;
 }
 
 /* Footer */
